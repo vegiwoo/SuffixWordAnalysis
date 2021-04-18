@@ -30,7 +30,12 @@ func appReducer(state: inout AppState, action: AppAction, environment: AppEnviro
 
 func navigationReducer(state: inout NavigationState, action: NavigationAction, environment: AppEnvironment) -> AnyPublisher<NavigationAction, Never> {
     
-    // switch action
+    switch action {
+    
+    case let .setSegmentControlIndex(index):
+        state.segmentControlIndex = index
+        print("ℹ️ Selected segment control index:", state.segmentControlIndex)
+    }
     
     return Empty().eraseToAnyPublisher()
 }

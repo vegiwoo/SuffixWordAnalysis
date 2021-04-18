@@ -14,7 +14,8 @@ struct AppState {
 }
 
 struct NavigationState {
-    
+    var segmentControlIndex: Int = 0
+    var segmentes: [String] = ["Popular", "All"]
 }
 
 

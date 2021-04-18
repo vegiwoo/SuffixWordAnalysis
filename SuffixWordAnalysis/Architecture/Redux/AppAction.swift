@@ -14,7 +14,7 @@ enum AppAction {
 }
 
 enum NavigationAction {
-    case stub
+    case setSegmentControlIndex(Int)
 }
 
 enum PopularSuffixesAction {

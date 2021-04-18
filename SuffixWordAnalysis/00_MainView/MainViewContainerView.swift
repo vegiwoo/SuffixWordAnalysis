@@ -13,10 +13,20 @@ struct MainViewContainerView: View {
     
     var body: some View {
         NavigationStackView {
-            MainViewRenderView()
-        }.onAppear {
-            print(appStore)
+            MainViewRenderView(selection: selection, segmentes: segmentes)
         }
+    }
+}
+
+extension MainViewContainerView {
+    private var selection: Binding<Int> {
+        return appStore.binding(for: \.navigation.segmentControlIndex) {
+            AppAction.navigation(action: NavigationAction.setSegmentControlIndex($0))
+        }
+    }
+    
+    private var segmentes: Binding<[String]> {
+        appStore.binding(for: \.navigation.segmentes)
     }
 }
 

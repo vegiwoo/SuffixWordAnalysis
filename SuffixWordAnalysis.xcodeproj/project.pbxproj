@@ -34,6 +34,9 @@
 		7783BFFB262C97FB00216567 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7783BFFA262C97FB00216567 /* AppAction.swift */; };
 		77D0CF8F262C9D66001C4A20 /* MainViewContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CF8E262C9D66001C4A20 /* MainViewContainerView.swift */; };
 		77D0CF95262C9D78001C4A20 /* MainViewRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CF94262C9D78001C4A20 /* MainViewRenderView.swift */; };
+		77D0CF9C262CAB3B001C4A20 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CF9B262CAB3B001C4A20 /* Title.swift */; };
+		77D0CFA1262CACCC001C4A20 /* PopularSuffixesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFA0262CACCC001C4A20 /* PopularSuffixesView.swift */; };
+		77D0CFA5262CACE7001C4A20 /* AllSuffixesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFA4262CACE7001C4A20 /* AllSuffixesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,9 @@
 		7783BFFA262C97FB00216567 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
 		77D0CF8E262C9D66001C4A20 /* MainViewContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewContainerView.swift; sourceTree = "<group>"; };
 		77D0CF94262C9D78001C4A20 /* MainViewRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewRenderView.swift; sourceTree = "<group>"; };
+		77D0CF9B262CAB3B001C4A20 /* Title.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		77D0CFA0262CACCC001C4A20 /* PopularSuffixesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSuffixesView.swift; sourceTree = "<group>"; };
+		77D0CFA4262CACE7001C4A20 /* AllSuffixesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSuffixesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,7 @@
 		7783BFA5262C5A6C00216567 /* UIControls */ = {
 			isa = PBXGroup;
 			children = (
+				77D0CF9A262CAB31001C4A20 /* Styles */,
 				7783BFA6262C5AA200216567 /* WordAnalysisView.swift */,
 			);
 			path = UIControls;
@@ -241,10 +248,28 @@
 		77D0CF8D262C9D42001C4A20 /* 00_MainView */ = {
 			isa = PBXGroup;
 			children = (
+				77D0CF9F262CACBE001C4A20 /* Subviews */,
 				77D0CF8E262C9D66001C4A20 /* MainViewContainerView.swift */,
 				77D0CF94262C9D78001C4A20 /* MainViewRenderView.swift */,
 			);
 			path = 00_MainView;
+			sourceTree = "<group>";
+		};
+		77D0CF9A262CAB31001C4A20 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				77D0CF9B262CAB3B001C4A20 /* Title.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		77D0CF9F262CACBE001C4A20 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				77D0CFA0262CACCC001C4A20 /* PopularSuffixesView.swift */,
+				77D0CFA4262CACE7001C4A20 /* AllSuffixesView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,11 +378,14 @@
 				7783BFE9262C95A500216567 /* AppStore.swift in Sources */,
 				7783BFE0262C957600216567 /* IContainer.swift in Sources */,
 				7783BFB0262C62B300216567 /* SuffixWordAnalysisWidgetData.swift in Sources */,
+				77D0CFA1262CACCC001C4A20 /* PopularSuffixesView.swift in Sources */,
 				7783BFF7262C972900216567 /* AppState.swift in Sources */,
 				7783BFA7262C5AA200216567 /* WordAnalysisView.swift in Sources */,
 				7783BFF3262C95FE00216567 /* AppEnvironment.swift in Sources */,
 				77D0CF95262C9D78001C4A20 /* MainViewRenderView.swift in Sources */,
+				77D0CF9C262CAB3B001C4A20 /* Title.swift in Sources */,
 				7783BFFB262C97FB00216567 /* AppAction.swift in Sources */,
+				77D0CFA5262CACE7001C4A20 /* AllSuffixesView.swift in Sources */,
 				7783BFE1262C957600216567 /* InstanceScope.swift in Sources */,
 				7783BFE4262C957600216567 /* IResolvable.swift in Sources */,
 				7783BFE3262C957600216567 /* Container.swift in Sources */,
