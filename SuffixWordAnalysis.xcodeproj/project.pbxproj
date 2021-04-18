@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7783BF7B262C583E00216567 /* SuffixWordAnalysisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7783BF7A262C583E00216567 /* SuffixWordAnalysisApp.swift */; };
-		7783BF7D262C583E00216567 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7783BF7C262C583E00216567 /* ContentView.swift */; };
 		7783BF7F262C583E00216567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7783BF7E262C583E00216567 /* Assets.xcassets */; };
 		7783BF82262C583E00216567 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7783BF81262C583E00216567 /* Preview Assets.xcassets */; };
 		7783BF91262C58C500216567 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7783BF90262C58C500216567 /* WidgetKit.framework */; };
@@ -33,6 +32,8 @@
 		7783BFF3262C95FE00216567 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7783BFF2262C95FE00216567 /* AppEnvironment.swift */; };
 		7783BFF7262C972900216567 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7783BFF6262C972900216567 /* AppState.swift */; };
 		7783BFFB262C97FB00216567 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7783BFFA262C97FB00216567 /* AppAction.swift */; };
+		77D0CF8F262C9D66001C4A20 /* MainViewContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CF8E262C9D66001C4A20 /* MainViewContainerView.swift */; };
+		77D0CF95262C9D78001C4A20 /* MainViewRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CF94262C9D78001C4A20 /* MainViewRenderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +63,6 @@
 /* Begin PBXFileReference section */
 		7783BF77262C583E00216567 /* SuffixWordAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuffixWordAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7783BF7A262C583E00216567 /* SuffixWordAnalysisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixWordAnalysisApp.swift; sourceTree = "<group>"; };
-		7783BF7C262C583E00216567 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7783BF7E262C583E00216567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7783BF81262C583E00216567 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7783BF83262C583E00216567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +86,8 @@
 		7783BFF2262C95FE00216567 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		7783BFF6262C972900216567 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		7783BFFA262C97FB00216567 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		77D0CF8E262C9D66001C4A20 /* MainViewContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewContainerView.swift; sourceTree = "<group>"; };
+		77D0CF94262C9D78001C4A20 /* MainViewRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewRenderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,12 +132,12 @@
 		7783BF79262C583E00216567 /* SuffixWordAnalysis */ = {
 			isa = PBXGroup;
 			children = (
+				77D0CF8D262C9D42001C4A20 /* 00_MainView */,
 				7783BFFF262C9A3400216567 /* Models */,
 				7783BFFE262C9A2100216567 /* AccompanyingCode */,
 				7783BFD9262C956B00216567 /* Architecture */,
 				7783BFA5262C5A6C00216567 /* UIControls */,
 				7783BFD4262C94E700216567 /* Navigation */,
-				7783BF7C262C583E00216567 /* ContentView.swift */,
 			);
 			path = SuffixWordAnalysis;
 			sourceTree = "<group>";
@@ -234,6 +236,15 @@
 				7783BFAF262C62B300216567 /* SuffixWordAnalysisWidgetData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		77D0CF8D262C9D42001C4A20 /* 00_MainView */ = {
+			isa = PBXGroup;
+			children = (
+				77D0CF8E262C9D66001C4A20 /* MainViewContainerView.swift */,
+				77D0CF94262C9D78001C4A20 /* MainViewRenderView.swift */,
+			);
+			path = 00_MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,8 +347,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7783BF7D262C583E00216567 /* ContentView.swift in Sources */,
 				7783BFBA262C7F0E00216567 /* SuffixWordAnalisisIntents.intentdefinition in Sources */,
+				77D0CF8F262C9D66001C4A20 /* MainViewContainerView.swift in Sources */,
 				7783BFE2262C957600216567 /* ContainerHolder.swift in Sources */,
 				7783BFE9262C95A500216567 /* AppStore.swift in Sources */,
 				7783BFE0262C957600216567 /* IContainer.swift in Sources */,
@@ -345,6 +356,7 @@
 				7783BFF7262C972900216567 /* AppState.swift in Sources */,
 				7783BFA7262C5AA200216567 /* WordAnalysisView.swift in Sources */,
 				7783BFF3262C95FE00216567 /* AppEnvironment.swift in Sources */,
+				77D0CF95262C9D78001C4A20 /* MainViewRenderView.swift in Sources */,
 				7783BFFB262C97FB00216567 /* AppAction.swift in Sources */,
 				7783BFE1262C957600216567 /* InstanceScope.swift in Sources */,
 				7783BFE4262C957600216567 /* IResolvable.swift in Sources */,
