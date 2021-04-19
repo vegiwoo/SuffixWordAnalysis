@@ -41,6 +41,12 @@
 		77D0CFBA262D63E8001C4A20 /* TextAnalysisRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFB9262D63E8001C4A20 /* TextAnalysisRenderView.swift */; };
 		77D0CFBE262D6410001C4A20 /* PopularSuffixesRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFBD262D6410001C4A20 /* PopularSuffixesRenderView.swift */; };
 		77D0CFC2262D6463001C4A20 /* AllSuffixesRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFC1262D6463001C4A20 /* AllSuffixesRenderView.swift */; };
+		77D0CFC9262D88E3001C4A20 /* String + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFC8262D88E3001C4A20 /* String + Ext.swift */; };
+		77D0CFCF262D8909001C4A20 /* Collection + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFCE262D8909001C4A20 /* Collection + Ext.swift */; };
+		77D0CFD3262D8931001C4A20 /* SuffixSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFD2262D8931001C4A20 /* SuffixSequence.swift */; };
+		77D0CFD8262D8968001C4A20 /* SuffixProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFD7262D8968001C4A20 /* SuffixProvider.swift */; };
+		77D0CFDC262D89BC001C4A20 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFDB262D89BC001C4A20 /* CoreDataProvider.swift */; };
+		77D0CFE1262D89FE001C4A20 /* SuffixWordAnalysisModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFDF262D89FE001C4A20 /* SuffixWordAnalysisModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +108,12 @@
 		77D0CFB9262D63E8001C4A20 /* TextAnalysisRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnalysisRenderView.swift; sourceTree = "<group>"; };
 		77D0CFBD262D6410001C4A20 /* PopularSuffixesRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSuffixesRenderView.swift; sourceTree = "<group>"; };
 		77D0CFC1262D6463001C4A20 /* AllSuffixesRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSuffixesRenderView.swift; sourceTree = "<group>"; };
+		77D0CFC8262D88E3001C4A20 /* String + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Ext.swift"; sourceTree = "<group>"; };
+		77D0CFCE262D8909001C4A20 /* Collection + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection + Ext.swift"; sourceTree = "<group>"; };
+		77D0CFD2262D8931001C4A20 /* SuffixSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixSequence.swift; sourceTree = "<group>"; };
+		77D0CFD7262D8968001C4A20 /* SuffixProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixProvider.swift; sourceTree = "<group>"; };
+		77D0CFDB262D89BC001C4A20 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		77D0CFE0262D89FE001C4A20 /* SuffixWordAnalysisModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SuffixWordAnalysisModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +158,8 @@
 		7783BF79262C583E00216567 /* SuffixWordAnalysis */ = {
 			isa = PBXGroup;
 			children = (
+				77D0CFD6262D8952001C4A20 /* Providers */,
+				77D0CFC5262D88B7001C4A20 /* Extensions */,
 				77D0CF8D262C9D42001C4A20 /* 00_MainView */,
 				7783BFFF262C9A3400216567 /* Models */,
 				7783BFFE262C9A2100216567 /* AccompanyingCode */,
@@ -241,6 +255,7 @@
 				7783BF7E262C583E00216567 /* Assets.xcassets */,
 				7783BF83262C583E00216567 /* Info.plist */,
 				7783BF80262C583E00216567 /* Preview Content */,
+				77D0CFDF262D89FE001C4A20 /* SuffixWordAnalysisModel.xcdatamodeld */,
 			);
 			path = AccompanyingCode;
 			sourceTree = "<group>";
@@ -249,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				7783BFAF262C62B300216567 /* SuffixWordAnalysisWidgetData.swift */,
+				77D0CFD2262D8931001C4A20 /* SuffixSequence.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -306,6 +322,24 @@
 				77D0CFC1262D6463001C4A20 /* AllSuffixesRenderView.swift */,
 			);
 			path = AllSuffixesViews;
+			sourceTree = "<group>";
+		};
+		77D0CFC5262D88B7001C4A20 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77D0CFC8262D88E3001C4A20 /* String + Ext.swift */,
+				77D0CFCE262D8909001C4A20 /* Collection + Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		77D0CFD6262D8952001C4A20 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				77D0CFD7262D8968001C4A20 /* SuffixProvider.swift */,
+				77D0CFDB262D89BC001C4A20 /* CoreDataProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,17 +443,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				7783BFBA262C7F0E00216567 /* SuffixWordAnalisisIntents.intentdefinition in Sources */,
+				77D0CFD3262D8931001C4A20 /* SuffixSequence.swift in Sources */,
+				77D0CFE1262D89FE001C4A20 /* SuffixWordAnalysisModel.xcdatamodeld in Sources */,
+				77D0CFCF262D8909001C4A20 /* Collection + Ext.swift in Sources */,
 				77D0CF8F262C9D66001C4A20 /* MainViewContainerView.swift in Sources */,
 				7783BFE2262C957600216567 /* ContainerHolder.swift in Sources */,
 				7783BFE9262C95A500216567 /* AppStore.swift in Sources */,
 				7783BFE0262C957600216567 /* IContainer.swift in Sources */,
+				77D0CFD8262D8968001C4A20 /* SuffixProvider.swift in Sources */,
 				7783BFB0262C62B300216567 /* SuffixWordAnalysisWidgetData.swift in Sources */,
 				77D0CFA1262CACCC001C4A20 /* PopularSuffixesContainerView.swift in Sources */,
 				7783BFF7262C972900216567 /* AppState.swift in Sources */,
+				77D0CFDC262D89BC001C4A20 /* CoreDataProvider.swift in Sources */,
 				7783BFA7262C5AA200216567 /* WordAnalysisView.swift in Sources */,
 				7783BFF3262C95FE00216567 /* AppEnvironment.swift in Sources */,
 				77D0CF95262C9D78001C4A20 /* MainViewRenderView.swift in Sources */,
 				77D0CFBA262D63E8001C4A20 /* TextAnalysisRenderView.swift in Sources */,
+				77D0CFC9262D88E3001C4A20 /* String + Ext.swift in Sources */,
 				77D0CFBE262D6410001C4A20 /* PopularSuffixesRenderView.swift in Sources */,
 				77D0CF9C262CAB3B001C4A20 /* Title.swift in Sources */,
 				7783BFFB262C97FB00216567 /* AppAction.swift in Sources */,
@@ -698,6 +738,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		77D0CFDF262D89FE001C4A20 /* SuffixWordAnalysisModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				77D0CFE0262D89FE001C4A20 /* SuffixWordAnalysisModel.xcdatamodel */,
+			);
+			currentVersion = 77D0CFE0262D89FE001C4A20 /* SuffixWordAnalysisModel.xcdatamodel */;
+			path = SuffixWordAnalysisModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7783BF6F262C583D00216567 /* Project object */;
 }

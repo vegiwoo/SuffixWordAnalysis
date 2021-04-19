@@ -9,10 +9,10 @@ import Foundation
 
 final class AppEnvironment: Singletonable {
     
-//    @Resolvable
-//    var networkProvider: NetworkProvider
-//    @Resolvable
-//    var coreDataProvider: CoreDataProvider
+    @Resolvable
+    var suffixProvider: SuffixProvider
+    @Resolvable
+    var coreDataProvider: CoreDataProvider
     
     init(container: IContainer, args: ()) {}
 }
