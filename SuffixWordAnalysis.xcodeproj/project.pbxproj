@@ -35,8 +35,12 @@
 		77D0CF8F262C9D66001C4A20 /* MainViewContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CF8E262C9D66001C4A20 /* MainViewContainerView.swift */; };
 		77D0CF95262C9D78001C4A20 /* MainViewRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CF94262C9D78001C4A20 /* MainViewRenderView.swift */; };
 		77D0CF9C262CAB3B001C4A20 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CF9B262CAB3B001C4A20 /* Title.swift */; };
-		77D0CFA1262CACCC001C4A20 /* PopularSuffixesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFA0262CACCC001C4A20 /* PopularSuffixesView.swift */; };
-		77D0CFA5262CACE7001C4A20 /* AllSuffixesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFA4262CACE7001C4A20 /* AllSuffixesView.swift */; };
+		77D0CFA1262CACCC001C4A20 /* PopularSuffixesContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFA0262CACCC001C4A20 /* PopularSuffixesContainerView.swift */; };
+		77D0CFA5262CACE7001C4A20 /* AllSuffixesContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFA4262CACE7001C4A20 /* AllSuffixesContainerView.swift */; };
+		77D0CFAE262D639F001C4A20 /* TextAnalysisContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFAD262D639F001C4A20 /* TextAnalysisContainerView.swift */; };
+		77D0CFBA262D63E8001C4A20 /* TextAnalysisRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFB9262D63E8001C4A20 /* TextAnalysisRenderView.swift */; };
+		77D0CFBE262D6410001C4A20 /* PopularSuffixesRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFBD262D6410001C4A20 /* PopularSuffixesRenderView.swift */; };
+		77D0CFC2262D6463001C4A20 /* AllSuffixesRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFC1262D6463001C4A20 /* AllSuffixesRenderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,8 +96,12 @@
 		77D0CF8E262C9D66001C4A20 /* MainViewContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewContainerView.swift; sourceTree = "<group>"; };
 		77D0CF94262C9D78001C4A20 /* MainViewRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewRenderView.swift; sourceTree = "<group>"; };
 		77D0CF9B262CAB3B001C4A20 /* Title.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
-		77D0CFA0262CACCC001C4A20 /* PopularSuffixesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSuffixesView.swift; sourceTree = "<group>"; };
-		77D0CFA4262CACE7001C4A20 /* AllSuffixesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSuffixesView.swift; sourceTree = "<group>"; };
+		77D0CFA0262CACCC001C4A20 /* PopularSuffixesContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSuffixesContainerView.swift; sourceTree = "<group>"; };
+		77D0CFA4262CACE7001C4A20 /* AllSuffixesContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSuffixesContainerView.swift; sourceTree = "<group>"; };
+		77D0CFAD262D639F001C4A20 /* TextAnalysisContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnalysisContainerView.swift; sourceTree = "<group>"; };
+		77D0CFB9262D63E8001C4A20 /* TextAnalysisRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnalysisRenderView.swift; sourceTree = "<group>"; };
+		77D0CFBD262D6410001C4A20 /* PopularSuffixesRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSuffixesRenderView.swift; sourceTree = "<group>"; };
+		77D0CFC1262D6463001C4A20 /* AllSuffixesRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSuffixesRenderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,10 +274,38 @@
 		77D0CF9F262CACBE001C4A20 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				77D0CFA0262CACCC001C4A20 /* PopularSuffixesView.swift */,
-				77D0CFA4262CACE7001C4A20 /* AllSuffixesView.swift */,
+				77D0CFAC262D638E001C4A20 /* TextAnalysisViews */,
+				77D0CFB3262D63C2001C4A20 /* PopularSuffixesViews */,
+				77D0CFB6262D63D0001C4A20 /* AllSuffixesViews */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		77D0CFAC262D638E001C4A20 /* TextAnalysisViews */ = {
+			isa = PBXGroup;
+			children = (
+				77D0CFAD262D639F001C4A20 /* TextAnalysisContainerView.swift */,
+				77D0CFB9262D63E8001C4A20 /* TextAnalysisRenderView.swift */,
+			);
+			path = TextAnalysisViews;
+			sourceTree = "<group>";
+		};
+		77D0CFB3262D63C2001C4A20 /* PopularSuffixesViews */ = {
+			isa = PBXGroup;
+			children = (
+				77D0CFA0262CACCC001C4A20 /* PopularSuffixesContainerView.swift */,
+				77D0CFBD262D6410001C4A20 /* PopularSuffixesRenderView.swift */,
+			);
+			path = PopularSuffixesViews;
+			sourceTree = "<group>";
+		};
+		77D0CFB6262D63D0001C4A20 /* AllSuffixesViews */ = {
+			isa = PBXGroup;
+			children = (
+				77D0CFA4262CACE7001C4A20 /* AllSuffixesContainerView.swift */,
+				77D0CFC1262D6463001C4A20 /* AllSuffixesRenderView.swift */,
+			);
+			path = AllSuffixesViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,20 +414,24 @@
 				7783BFE9262C95A500216567 /* AppStore.swift in Sources */,
 				7783BFE0262C957600216567 /* IContainer.swift in Sources */,
 				7783BFB0262C62B300216567 /* SuffixWordAnalysisWidgetData.swift in Sources */,
-				77D0CFA1262CACCC001C4A20 /* PopularSuffixesView.swift in Sources */,
+				77D0CFA1262CACCC001C4A20 /* PopularSuffixesContainerView.swift in Sources */,
 				7783BFF7262C972900216567 /* AppState.swift in Sources */,
 				7783BFA7262C5AA200216567 /* WordAnalysisView.swift in Sources */,
 				7783BFF3262C95FE00216567 /* AppEnvironment.swift in Sources */,
 				77D0CF95262C9D78001C4A20 /* MainViewRenderView.swift in Sources */,
+				77D0CFBA262D63E8001C4A20 /* TextAnalysisRenderView.swift in Sources */,
+				77D0CFBE262D6410001C4A20 /* PopularSuffixesRenderView.swift in Sources */,
 				77D0CF9C262CAB3B001C4A20 /* Title.swift in Sources */,
 				7783BFFB262C97FB00216567 /* AppAction.swift in Sources */,
-				77D0CFA5262CACE7001C4A20 /* AllSuffixesView.swift in Sources */,
+				77D0CFC2262D6463001C4A20 /* AllSuffixesRenderView.swift in Sources */,
+				77D0CFA5262CACE7001C4A20 /* AllSuffixesContainerView.swift in Sources */,
 				7783BFE1262C957600216567 /* InstanceScope.swift in Sources */,
 				7783BFE4262C957600216567 /* IResolvable.swift in Sources */,
 				7783BFE3262C957600216567 /* Container.swift in Sources */,
 				7783BFED262C95C700216567 /* AppReducer.swift in Sources */,
 				7783BFD6262C951800216567 /* NavigationStack.swift in Sources */,
 				7783BF7B262C583E00216567 /* SuffixWordAnalysisApp.swift in Sources */,
+				77D0CFAE262D639F001C4A20 /* TextAnalysisContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

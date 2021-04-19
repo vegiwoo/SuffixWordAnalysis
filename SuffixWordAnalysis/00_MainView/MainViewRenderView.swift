@@ -28,9 +28,11 @@ struct MainViewRenderView: View {
             .padding(.horizontal)
             
             if selection == 0 {
-                PopularSuffixesView()
+                TextAnalysisContainerView()
             } else if selection == 1 {
-                AllSuffixesView()
+                PopularSuffixesContainerView()
+            } else if selection == 2 {
+                AllSuffixesContainerView()
             }
         }.animation(Animation.easeOut(duration: 0.3))
     }

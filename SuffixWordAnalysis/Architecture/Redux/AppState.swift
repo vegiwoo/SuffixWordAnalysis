@@ -15,9 +15,8 @@ struct AppState {
 
 struct NavigationState {
     var segmentControlIndex: Int = 0
-    var segmentes: [String] = ["Popular", "All"]
+    var segmentes: [String] = ["Text analysis", "Popular suffixes", "All suffixes"]
 }
-
 
 struct PopularSuffixesState {
     
