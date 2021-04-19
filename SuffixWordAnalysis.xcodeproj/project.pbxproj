@@ -47,6 +47,8 @@
 		77D0CFD8262D8968001C4A20 /* SuffixProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFD7262D8968001C4A20 /* SuffixProvider.swift */; };
 		77D0CFDC262D89BC001C4A20 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFDB262D89BC001C4A20 /* CoreDataProvider.swift */; };
 		77D0CFE1262D89FE001C4A20 /* SuffixWordAnalysisModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFDF262D89FE001C4A20 /* SuffixWordAnalysisModel.xcdatamodeld */; };
+		77D0CFE5262D90FD001C4A20 /* TextFieldStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFE4262D90FD001C4A20 /* TextFieldStyles.swift */; };
+		77D0CFEA262D9144001C4A20 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0CFE9262D9144001C4A20 /* ButtonStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,8 @@
 		77D0CFD7262D8968001C4A20 /* SuffixProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixProvider.swift; sourceTree = "<group>"; };
 		77D0CFDB262D89BC001C4A20 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
 		77D0CFE0262D89FE001C4A20 /* SuffixWordAnalysisModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SuffixWordAnalysisModel.xcdatamodel; sourceTree = "<group>"; };
+		77D0CFE4262D90FD001C4A20 /* TextFieldStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyles.swift; sourceTree = "<group>"; };
+		77D0CFE9262D9144001C4A20 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				77D0CF9B262CAB3B001C4A20 /* Title.swift */,
+				77D0CFE4262D90FD001C4A20 /* TextFieldStyles.swift */,
+				77D0CFE9262D9144001C4A20 /* ButtonStyles.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -444,6 +450,7 @@
 			files = (
 				7783BFBA262C7F0E00216567 /* SuffixWordAnalisisIntents.intentdefinition in Sources */,
 				77D0CFD3262D8931001C4A20 /* SuffixSequence.swift in Sources */,
+				77D0CFE5262D90FD001C4A20 /* TextFieldStyles.swift in Sources */,
 				77D0CFE1262D89FE001C4A20 /* SuffixWordAnalysisModel.xcdatamodeld in Sources */,
 				77D0CFCF262D8909001C4A20 /* Collection + Ext.swift in Sources */,
 				77D0CF8F262C9D66001C4A20 /* MainViewContainerView.swift in Sources */,
@@ -454,6 +461,7 @@
 				7783BFB0262C62B300216567 /* SuffixWordAnalysisWidgetData.swift in Sources */,
 				77D0CFA1262CACCC001C4A20 /* PopularSuffixesContainerView.swift in Sources */,
 				7783BFF7262C972900216567 /* AppState.swift in Sources */,
+				77D0CFEA262D9144001C4A20 /* ButtonStyles.swift in Sources */,
 				77D0CFDC262D89BC001C4A20 /* CoreDataProvider.swift in Sources */,
 				7783BFA7262C5AA200216567 /* WordAnalysisView.swift in Sources */,
 				7783BFF3262C95FE00216567 /* AppEnvironment.swift in Sources */,

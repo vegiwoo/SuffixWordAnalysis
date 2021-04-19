@@ -7,12 +7,14 @@
 
 import Foundation
 
+typealias SuffixElement = (element: SuffixSequence.Element, suffixIndex: Int)
+
 class SuffixProvider: Singletonable {
     required init(container: IContainer, args: Void) { }
     
-    func getSuffixArray(from word: String, maxSuffixLength: Int) -> [(element: SuffixSequence.Element, suffixIndex: Int)]{
+    func getSuffixArray(from word: String, maxSuffixLength: Int) -> [SuffixElement] {
         let suffixSequence = SuffixSequence(word: word)
-        var results: [(element: SuffixSequence.Element, suffixIndex: Int)] = .init()
+        var results: [SuffixElement] = .init()
 
         for element in suffixSequence {
             let suffixIndex = word.distance(to: element)
